@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Consciência Negra 2025</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar bg-body-transluscent fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imgs/logo vilma.png" alt="Logo Vilma Catahrina Mosca Leone" width="50" height="50" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" data-bs-theme="dark">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom border-secondary">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="imgs/logo vilma.png" alt="Logo Consciência Negra Vilma" width="50" height="50"
+              class="me-2 rounded-circle border border-warning shadow-sm" />
+            <div>
+              <h5 class="m-0 text-warning fw-bold">Consciência Negra Vilma</h5>
+              <small class="text-light">Educação, Cultura e Identidade</small>
+            </div>
+          </a>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Fechar"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column justify-content-between">
+          <!-- conteúdo principal -->
+          <div>
+            <h5 class="text-warning mt-3 mb-2">Sobre o Projeto</h5>
+            <p class="text-light small">
+              O <strong>Projeto Consciência Negra Vilma</strong> é uma iniciativa
+              escolar que valoriza a história, a cultura e o protagonismo da população
+              negra. O objetivo é promover <strong>educação antirracista</strong>,
+              incentivar o <strong>respeito à diversidade</strong> e fortalecer o
+              orgulho da identidade afro-brasileira.
+            </p>
+
+            <div class="alert alert-secondary bg-transparent border-warning text-light small py-2 mt-2">
+              <i class="bi bi-lightbulb-fill text-warning"></i>
+              “Educar é um ato de resistência e transformação social.”
+            </div>
+
+            <hr class="border-secondary my-4" />
+
+            <h6 class="text-warning mb-2"> Missão</h6>
+            <p class="text-light small">
+              Promover a reflexão e o reconhecimento das contribuições da comunidade
+              negra para a sociedade brasileira, por meio da arte, cultura,
+              educação e tecnologia.
+            </p>
+
+            <h6 class="text-warning mt-4 mb-2"> Valores</h6>
+            <ul class="list-unstyled text-light small ps-2">
+              <li> Respeito à diversidade e à ancestralidade</li>
+              <li> Valorização da história e da identidade negra</li>
+              <li> Igualdade de oportunidades</li>
+              <li> Inclusão, empatia e solidariedade</li>
+            </ul>
+
+            <hr class="border-secondary my-4" />
+
+            <h6 class="text-warning mb-3">Acesse também</h6>
+            <div class="d-grid gap-2">
+              <a href="#estudos" class="btn btn-outline-warning btn-sm">
+                <i class="bi bi-info-circle me-1"></i> Página Sobre
+              </a>
+              <a href="#lideranca" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-people-fill me-1"></i> Lideranças Negras
+              </a>
+              <a href="#quiz" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-question-circle me-1"></i> Quiz da Consciência
+              </a>
+              <a href="#galeria" class="btn btn-outline-light btn-sm">
+                <i class="bi bi-image me-1"></i> Galeria de fotos
+              </a>
+            </div>
+          </div>
+
+          <!-- rodapé de dentro do offcanvas -->
+          <div class="offcanvas-footer border-top border-secondary pt-3">
+            <h6 class="text-warning mb-2"> Contato & Redes</h6>
+            <div class="social-btn-container text-center my-4">
+              <button id="abrirRedes" class="btn btn-dark btn-lg">
+                Redes Sociais dos Desenvolvedores
+              </button>
+            </div>
+
+            <!-- modal de redes sociais dos desenvolvedores (o mesmo footer da LP) -->
+            <div id="modalRedes" class="modal-redes">
+              <div class="modal-conteudo">
+                <span id="fecharModal" class="fechar">&times;</span>
+                <h2 class="text-center mb-3">Nossas Redes Sociais</h2>
+
+                <div class="redes-pessoa">
+                  <h5>Jaime Santos</h5>
+                  <a href="https://github.com/vicentiv" target="_blank">GitHub</a>
+                  <a href="https://www.linkedin.com/in/jaimesantos18" target="_blank">LinkedIn</a>
+                  <a href="https://www.instagram.com/devjaimesantos" target="_blank">Instagram</a>
+                  <a href="mailto:jaime@gmail.com?subject=Olá&body=Oi, tudo bem?" class="btn btn-dark"
+                    target="_blank">Email</a>
+                </div>
+
+                <div class="redes-pessoa">
+                  <h5>João Vitor</h5>
+                  <a href="https://github.com/dev-joaosantos" target="_blank">GitHub</a>
+                  <a href="https://www.linkedin.com/in/joão-vitor-nascimento-dos-santos-861b74362"
+                    target="_blank">LinkedIn</a>
+                  <a href="https://www.instagram.com/dev_joaosantos" target="_blank">Instagram</a>
+                  <a href="mailto:#@gmail.com?subject=Olá&body=Oi, tudo bem?" target="_blank">Email</a>
+                </div>
+
+                <div class="redes-pessoa">
+                  <h5>Larissa</h5>
+                  <a href="#" target="_blank">GitHub</a>
+                  <a href="#" target="_blank">LinkedIn</a>
+                  <a href="#" target="_blank">Instagram</a>
+                  <a href="mailto:carlos@gmail.com" target="_blank">Email</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+
+              <p class="footer-quote mb-2">
+                “Enquanto houver racismo, não haverá democracia.”
+              </p>
+
+
+              <hr class="footer-divider mx-auto mb-3" />
+
+
+              <div class="footer-logo mb-2">
+                <img src="imgs/logo vilma.png" alt="logo da escola" width="60" height="60" class="mb-2" />
+                <img src="imgs/mão racismo.png" alt="mão movimento racista" width="60" height="60" class="mb-2" />
+                <h5 class="fw-bold">E.E. Vilma Catharina</h5>
+              </div>
+
+              <!-- Créditos -->
+              <p class="footer-credits mb-0">
+                Desenvolvido pelos alunos do 3° Ano C : Jaime Santos, João Vitor e
+                Larissa Santos. — Semana da Consciência Negra 2025.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </nav>
+  <!-- fim navbar -->
+
+  <!-- carrossel -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgs/carr1.png" class="d-block w-100" alt="imagem de design sobre a Consciência negra" />
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/carr2.webp" class="d-block w-100" alt="imagem de design sobre a Consciência negra" />
+      </div>
+      <div class="carousel-item">
+        <img src="imgs/carr3.webp" class="d-block w-100" alt="imagem de design sobre a Consciência negra" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- fim carrossel -->
+
+  <!-- seção de estudos -->
+  <section id="estudosfeed" class="container my-5">
+    <h2 id="estudos" class="mb-5">O que estamos estudando?</h2>
+
+    <div id="cards" class="row justify-content-center">
+      <div class="col-md-4 col-sm-6">
+        <div class="card study-card mb-4 shadow-sm">
+          <img src="imgs/historia.webp" class="card-img-top" alt="..." />
+          <div class="card-body card bg-black text-light">
+            <h5 class="card-title">
+              História e Importância da Consciência Negra no Brasil
+            </h5>
+            <p class="card-text">
+              Descubra os principais nomes, tradições e contribuições do
+              continente africano.
+
+            <h6 style="color: yellow;"> Responsáveis: Marcos Alves, Thaís Alves e Victor Alan 3°C. </h6>
+
+            </p>
+
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+              tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black text-light border-secondary">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                      História e Importância da Consciência Negra no Brasil
+                    </h1>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Origem do Dia da Consciência Negra O Dia da Consciência
+                    Negra, celebrado em 20 de novembro, homenageia Zumbi dos
+                    Palmares, líder do Quilombo dos Palmares, um símbolo de
+                    resistência contra a escravidão no Brasil. A data foi
+                    escolhida em memória à sua morte, ocorrida em 1695. Zumbi
+                    personifica a luta e a liberdade do povo negro, e sua
+                    história inspira a busca por igualdade e justiça.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                      Ver mais
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- modal 2 -->
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+              aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black text-light border-secondary">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                      Contribuições da População Negra para a Economia e
+                      Desenvolvimento do Brasil
+                    </h1>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    A população negra teve um papel fundamental na construção
+                    do Brasil, desde o período colonial até os dias atuais.
+                    Sua mão de obra foi essencial em diversas áreas, como
+                    agricultura, mineração e construção civil. Além disso, a
+                    cultura afro-brasileira enriqueceu o país com sua música,
+                    dança, culinária e religião.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- modal 2  -->
+
+            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+              aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black text-light border-secondary">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">
+                      Dados sobre a População Negra no Mercado de Trabalho
+                      Brasileiro
+                    </h1>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Apesar das contribuições, a população negra ainda enfrenta
+                    desigualdades no mercado de trabalho. Dados recentes
+                    mostram que negros e pardos ocupam menos cargos de
+                    liderança e recebem salários inferiores em comparação com
+                    os brancos. A luta por igualdade de oportunidades e
+                    valorização profissional continua sendo uma pauta
+                    importante no Brasil.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">
+                      Entendido.
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+              Ler mais
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fim do card 1 (junto com o modal)-->
+
+      <!-- inicio do card 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card study-card mb-4 shadow-sm">
+          <img src="imgs/carr1.png" class="card-img-top" alt="..." />
+          <div class="card-body card bg-black text-light">
+            <h5 class="card-title">
+              Cultura Afro-Brasileira e Suas Influências
+            </h5>
+            <p class="card-text">
+              Explore a origem do Dia da Consciência Negra e a riqueza da
+              herança africana no Brasil.
+            </p>
+            <h6 style="color: yellow;"> Responsáveis: Jaime Santos, João Vitor e Larissa Santos 3°C. </h6>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="exampleModalToggleA" aria-hidden="true"
+              aria-labelledby="exampleModalToggleLabelA" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black text-light border-secondary">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabelA">
+                      Cultura Afro-Brasileira
+                    </h1>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    A cultura afro-brasileira é formada pelas contribuições
+                    africanas à sociedade brasileira — na música, culinária,
+                    religião e arte. Expressões como o samba, o candomblé e a
+                    capoeira representam resistência e identidade.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggleB" data-bs-toggle="modal">
+                      Ver mais
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div class="modal fade" id="exampleModalToggleB" aria-hidden="true"
+              aria-labelledby="exampleModalToggleLabelB" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black text-light border-secondary">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabelB">
+                      Religiões e Tradições
+                    </h1>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    As religiões de matriz africana, como o Candomblé e a
+                    Umbanda, preservam a espiritualidade e as crenças trazidas
+                    pelos povos africanos escravizados. Elas são expressões de
+                    resistência cultural e respeito ancestral.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggleC" data-bs-toggle="modal">
+                      Continuar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div class="modal fade" id="exampleModalToggleC" aria-hidden="true"
+              aria-labelledby="exampleModalToggleLabelC" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-black text-light border-secondary">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabelC">
+                      Influência na Cultura Brasileira
+                    </h1>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal"
+                      aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    A presença africana influenciou fortemente a língua, a
+                    arte, a culinária e a música brasileiras. Essa diversidade
+                    é um dos pilares da nossa identidade nacional.
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-dismiss="modal">
+                      Entendido.
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botão -->
+            <button class="btn btn-outline-secondary" data-bs-target="#exampleModalToggleA" data-bs-toggle="modal">
+              Ler mais
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="lideranca-section text-light py-4">
+      <h2 class="text-center mb-4 section-title">Empreendedorismo Afro-Descendente</h2>
+
+      <details class="info-box">
+        <summary id="lideranca">Contexto Inicial</summary>
+        <p>
+          O empreendedorismo negro não pode ser analisado sem considerar os mais de 300 anos de escravidão no Brasil,
+          seguidos de um processo de abolição que não garantiu políticas de inclusão econômica, educacional ou
+          territorial. Após a abolição, pessoas negras foram empurradas para atividades informais, trabalhos braçais e
+          sub-remunerados, enquanto o Estado direcionava incentivos econômicos e educacionais a imigrantes europeus.
+          menor acesso à educação formal de qualidade; salários inferiores para pessoas negras ocupando as mesmas
+          posições que pessoas brancas; barreiras no sistema financeiro para crédito e investimento; baixa participação
+          no ecossistema formal de inovação.
+        </p>
+      </details>
+
+      <details class="info-box">
+        <summary>Estratégia de Sobrevivência</summary>
+        <p>
+          Assim, o empreendedorismo negro nasce como estratégia de sobrevivência, mas, ao longo do século XX e XXI,
+          transforma-se em expressão cultural, inovação e resistência econômica. Pesquisas do SEBRAE, Locomotiva e
+          Instituto Ethos revelam que empreendedores negros enfrentam obstáculos que não são apenas individuais, mas
+          estruturais: <br><br>
+          a) Barreiras ao acesso ao crédito <br>
+          * maior probabilidade de negativas bancárias; <br>
+          * exigência de garantias impossíveis para pequenos negócios; <br>
+          * juros mais altos. <br><br>
+          b) Baixa participação no setor de tecnologia <br>
+          * Apenas cerca de 14% dos profissionais de tecnologia no Brasil são negros, reduzindo a entrada desse público
+          em
+          mercados de maior lucratividade. <br><br>
+          c) Rede de contatos limitada
+          * O “capital social” — encontros, networking, eventos e conexões profissionais — é historicamente desigual.
+          <br><br>
+          d) Racismo estrutural <br>
+          * estereótipos sobre qualidade de produtos negros; <br>
+          * menos oportunidades de parcerias; <br>
+          * discriminação em espaços corporativos.
+        </p>
+      </details>
+
+      <details class="info-box">
+        <summary>Potencial Econômico</summary>
+        <p>
+          Apesar das barreiras, empreendedores negros movimentam um dos mercados mais promissores do país. <br><br>
+
+          Dados do Instituto Locomotiva mostram: <br>
+
+          * Economia preta movimenta <br>
+          * R$ 1,7 trilhão por ano <br>
+          * 54% dos consumidores preferem comprar de pessoas negras quando conhecem o propósito. Mercado afrocentrado
+          cresce especialmente em: <br><br>
+
+          - moda afro; <br>
+          - cosméticos e estética negra; <br>
+          - gastronomia afro-brasileira; <br>
+          - tecnologia inclusiva; <br>
+          - serviços culturais. <br><br>
+
+          Ou seja, investir no empreendedorismo negro não é apenas inclusão — é estratégia econômica de alto retorno.
+        </p>
+      </details>
+
+      <details class="info-box">
+        <summary>Conclusão</summary>
+        <p>
+          O empreendedorismo negro representa uma das maiores oportunidades de transformação social do Brasil.
+          Uma plataforma digital afrocentrada, acessível e estratégica é capaz de: <br><br>
+
+          * reduzir desigualdades históricas; <br>
+          * desenvolver lideranças negras; <br>
+          * fortalecer a economia preta; <br>
+          * impulsionar inovação guiada pela diversidade. <br><br>
+
+          Esse tipo de projeto é, portanto, econômico, estratégico, necessário e urgente
+        </p>
+      </details>
+      <h6 style="color: yellow;"> Responsável: Kamily 3°C. </h6>
+
+    </section>
+    <section class="lideranca-section text-light py-4">
+      <h2 class="text-center mb-4 section-title">Liderança Negra</h2>
+
+      <details class="info-box">
+        <summary id="lideranca">Liderança e Gestão Negra</summary>
+        <p>
+          A presença de pessoas negras em cargos de liderança é essencial para transformar a sociedade e promover
+          igualdade.
+          Apesar dos avanços, o racismo estrutural e a falta de representatividade ainda limitam o acesso a posições de
+          destaque.
+        </p>
+      </details>
+
+      <details class="info-box">
+        <summary>Líderes Negros</summary>
+        <p>
+          Ícones como <strong>Zumbi dos Palmares</strong>, <strong>Dandara</strong>, <strong>Abdias do
+            Nascimento</strong> e
+          <strong>Lélia Gonzalez</strong> inspiram o Brasil, enquanto <strong>Nelson Mandela</strong> e
+          <strong>Martin Luther King Jr.</strong> marcaram a luta global por justiça e liberdade.
+        </p>
+      </details>
+
+      <details class="info-box">
+        <summary>Empresas e Programas de Equidade</summary>
+        <p>
+          Empresas como <strong>Magazine Luiza</strong>, <strong>Natura</strong> e <strong>Google</strong> desenvolvem
+          programas
+          que fortalecem a presença negra na liderança e ampliam a diversidade corporativa.
+        </p>
+      </details>
+
+      <details class="info-box">
+        <summary>Conclusão</summary>
+        <p>
+          Valorizar a liderança negra é reconhecer a história, a força e o papel transformador de quem constrói um
+          futuro mais justo e inclusivo.
+        </p>
+      </details>
+      <h6 style="color: yellow;"> Responsáveis: Maria e Melyssa 3°C. </h6>
+
+    </section>
+
+    <section class="diversidade-section text-light py-4">
+      <h2 class="text-center mb-4 section-title">Diversidade e Inclusão</h2>
+
+      <div class="info-box">
+        <p>
+          A <strong>diversidade e inclusão</strong> nas organizações são essenciais para construir ambientes
+          de trabalho mais justos e produtivos. A diversidade envolve reunir pessoas com diferentes origens,
+          gêneros, raças, idades e culturas, enquanto a inclusão garante que todos sejam respeitados e tenham
+          oportunidades iguais.
+        </p>
+        <p>
+          Empresas que valorizam essas práticas ganham em criatividade, inovação e engajamento dos funcionários,
+          além de melhorar sua imagem no mercado. Promover treinamentos, políticas igualitárias e acessibilidade
+          são passos importantes para tornar o local de trabalho mais acolhedor e equilibrado.
+        </p>
+      </div>
+      <h6 style="color: yellow;"> Responsáveis: Ana Laura, Ana Luiza, Kimberly 3°C. </h6>
+
+    </section>
+
+    <section class="legislacao-section text-light py-4">
+      <div class="container">
+        <div class="legislacao-card">
+          <h2 class="section-title">Legislação e Políticas Públicas</h2>
+
+          <p>
+            A legislação e as políticas públicas voltadas para a população negra no Brasil têm como objetivo
+            <strong>combater o racismo</strong> e <strong>promover a igualdade racial</strong>.
+            A Constituição Federal de 1988 proíbe qualquer tipo de discriminação e define o racismo como crime.
+          </p>
+
+          <p>
+            A <strong>Lei nº 7.716/1989</strong>, conhecida como <em>Lei Antirracismo</em>, pune atos de preconceito
+            de raça, cor ou etnia. O <strong>Estatuto da Igualdade Racial</strong> (Lei nº 12.288/2010) assegura
+            direitos em educação, saúde, cultura e trabalho.
+          </p>
+
+          <p>
+            Já a <strong>Lei de Cotas</strong> (Lei nº 12.711/2012) reserva vagas para negros e pardos em universidades
+            públicas, ampliando o acesso ao ensino superior. A <strong>Política Nacional de Promoção da Igualdade
+              Racial</strong>
+            complementa essas medidas ao apoiar comunidades quilombolas.
+          </p>
+
+          <p class="highlight-text">
+            Essas ações são fundamentais para corrigir desigualdades históricas e construir uma sociedade mais justa e
+            igualitária.
+          </p>
+        </div>
+      </div><br>
+      <h6 style="color: yellow;"> Responsáveis: Jair Saraiva, Luiz Guilherme e Miguel lucas 3°C. </h6>
+
+    </section>
+
+
+  </section>
+
+  <!-- área de quiz -->
+
+  <section id="quiz" class="container my-5">
+    <div class="quiz-wrapper mx-auto" style="max-width: 920px;">
+      <div class="quiz-header text-center mb-3">
+        <h2 class="section-title">Diversidade & Inclusão no Trabalho</h2>
+        <h3>Responda o quiz e teste seu conhecimento — clique em "Enviar" para cada pergunta.</h3>
+      </div>
+
+
+      <div id="quiz-container"></div>
+
+      <!-- resultado do quiz -->
+      <div id="quiz-result" class="mt-4 d-none">
+        <div class="result-card p-4 rounded-3 text-center">
+          <h3 class="mb-2">Resultado</h3>
+          <p id="quiz-score" class="mb-0"></p>
+          <div class="mt-3">
+            <button id="quiz-restart" class="btn btn-outline-secondary">Refazer Quiz</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALERIA  DE FOTOS-->
+  <section class="gallery-section" id="galeria">
+    <div class="section-header">
+      <h2 class="section-title">Galeria de Fotos</h2>
+      <p>Uma coleção cuidadosamente selecionada de imagens que capturam momentos únicos com estilo e sofisticação.</p>
+    </div>
+
+    <div class="gallery-container">
+      <div class="decoration dec-1"></div>
+      <div class="decoration dec-2"></div>
+      <div class="decoration dec-3"></div>
+
+      <div class="gallery-grid">
+        <!-- 20 imagens com diferentes tamanhos -->
+        <div class="gallery-item">
+          <img src="imgs/foto1.jpg" alt="Natureza 1">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto2.jpg" alt="Cidade 1">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto3.jpg" alt="Arquitetura 1">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto4.jpg" alt="Pessoas 1">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto5.jpg" alt="Natureza 2">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto6.jpg" alt="Cidade 2">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto7.jpg" alt="Arquitetura 2">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/Captura de tela 2025-11-18 095702.png" alt="Pessoas 2">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/Captura de tela 2025-11-18 095745.png" alt="Natureza 3">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto8.jpg" alt="Cidade 3">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto9.jpg" alt="Arquitetura 3">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto10.jpg" alt="Pessoas 3">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto11.jpg" alt="Natureza 4">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto12.jpg" alt="Cidade 4">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto13.jpg" alt="Arquitetura 4">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto14.jpg" alt="Pessoas 4">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto15.jpg" alt="Natureza 5">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto16.jpg" alt="Cidade 5">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto17.jpg" alt="Arquitetura 5">
+
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto18.jpg" alt="Pessoas 5">
+        </div>
+        <div class="gallery-item">
+          <img src="imgs/foto19.jpg" alt="Pessoas 5">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer-site text-center text-white py-4">
+    <div class="container">
+
+      <p class="footer-quote mb-2">
+        “Enquanto houver racismo, não haverá democracia.”
+      </p>
+
+
+      <hr class="footer-divider mx-auto mb-3" />
+
+
+      <div class="footer-logo mb-2">
+        <img src="imgs/logo vilma.png" alt="logo da escola" width="60" height="60" class="mb-2" />
+        <img src="imgs/mão racismo.png" alt="mão movimento racista" width="60" height="60" class="mb-2" />
+        <h5 class="fw-bold">E.E. Vilma Catharina</h5>
+      </div>
+
+
+      <p class="footer-credits mb-0">
+        Desenvolvido pelos alunos do 3° Ano C : Jaime Santos, João Vitor e
+        Larissa Santos. — Semana da Consciência Negra 2025.
+      </p>
+      <!-- botão para redes sociais de desenvolvedores -->
+      <div class="social-btn-container text-center my-4">
+        <button id="abrirRedes2" class="btn btn-dark btn-lg">
+          Redes Sociais dos Desenvolvedores
+        </button>
+      </div>
+
+      <!-- modal de redes sociais -->
+      <div id="modalRedes2" class="modal-redes">
+        <div class="modal-conteudo">
+          <span id="fecharModal2" class="fechar">&times;</span>
+          <h2 class="text-center mb-3">Nossas Redes Sociais</h2>
+
+          <div class="redes-pessoa">
+            <h5>Jaime Santos</h5>
+            <a href="https://github.com/vicentiv" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jaimesantos18" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/devjaimesantos" target="_blank">Instagram</a>
+            <a href="mailto:jaime@gmail.com?subject=Olá&body=Oi, tudo bem?" class="btn btn-dark"
+              target="_blank">Email</a>
+          </div>
+
+          <div class="redes-pessoa">
+            <h5>João Vitor</h5>
+            <a href="https://github.com/dev-joaosantos" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/joão-vitor-nascimento-dos-santos-861b74362"
+              target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/dev_joaosantos" target="_blank">Instagram</a>
+            <a href="mailto:#@gmail.com?subject=Olá&body=Oi, tudo bem?" target="_blank">Email</a>
+          </div>
+
+          <div class="redes-pessoa">
+            <h5>Larissa</h5>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="mailto:emaildalarissa.com" target="_blank">Email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <script src="redes.js"></script>
+  <script src="quiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+@media (max-width: 576px) {
+  .modal-conteudo {
+    padding: 20px;
+  }
+  .redes-pessoa a {
+    display: block;
+    margin: 5px 0;
+  }
+}
